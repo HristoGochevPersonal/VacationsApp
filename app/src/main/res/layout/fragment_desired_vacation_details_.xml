@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="30dp"
+    tools:context=".presentation.desiredVacations.details.DesiredVacationDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/options_and_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="14dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toTopOf="@id/image_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/open_sans_bold"
+            android:text="@string/placeholder"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/notification_button"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:contentDescription="@string/add_notification_for_area"
+            android:elevation="4dp"
+            android:src="@drawable/ic_baseline_notification_add_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/edit_button"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:contentDescription="@string/edit_button"
+            android:elevation="4dp"
+            android:src="@drawable/ic_baseline_edit_24_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/image_info"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:elevation="3dp"
+        android:src="@drawable/no_image"
+        app:layout_constraintBottom_toTopOf="@id/main_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_info">
+
+
+        <ImageView
+            android:id="@+id/hotel_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="@string/hotel_image"
+            android:src="@drawable/ic_baseline_hotel_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hotel_info"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/placeholder"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/hotel_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="14dp"
+            android:contentDescription="@string/location_image"
+            android:src="@drawable/ic_baseline_location_on_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/hotel_image" />
+
+        <TextView
+            android:id="@+id/location_info"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/placeholder"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/location_image"
+            app:layout_constraintTop_toBottomOf="@id/hotel_info" />
+
+        <ImageView
+            android:id="@+id/cost_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="14dp"
+            android:contentDescription="@string/cost_image"
+            android:src="@drawable/ic_baseline_attach_money_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/location_image" />
+
+        <TextView
+            android:id="@+id/cost_info"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/placeholder"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/cost_image"
+            app:layout_constraintTop_toBottomOf="@id/location_info" />
+
+        <ImageView
+            android:id="@+id/description_image"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="14dp"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/ic_baseline_description_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cost_image" />
+
+        <TextView
+            android:id="@+id/description_info"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/placeholder"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/description_image"
+            app:layout_constraintTop_toBottomOf="@id/cost_info" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/go_back_button"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_marginTop="60dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/create_button_rounded"
+        android:elevation="3dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="@string/go_back"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/purple"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

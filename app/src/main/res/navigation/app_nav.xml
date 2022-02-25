@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/desiredVacationsFragment">
+
+    <fragment
+        android:id="@+id/desiredVacationsFragment"
+        android:name="com.example.vacationsapp.presentation.desiredVacations.list.DesiredVacationsFragment"
+        android:label="fragment_vacations"
+        tools:layout="@layout/fragment_desired_vacations" >
+        <action
+            android:id="@+id/action_desiredVacationsFragment_to_desiredVacationDetailsFragment"
+            app:destination="@id/desiredVacationDetailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/desiredVacationsFragment" />
+        <action
+            android:id="@+id/action_desiredVacationsFragment_to_addDesiredVacationFragment"
+            app:destination="@id/addDesiredVacationFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/desiredVacationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/desiredVacationDetailsFragment"
+        android:name="com.example.vacationsapp.presentation.desiredVacations.details.DesiredVacationDetailsFragment"
+        android:label="fragment_vacation_details_list"
+        tools:layout="@layout/fragment_desired_vacation_details_" >
+        <action
+            android:id="@+id/action_desiredVacationDetailsFragment_to_editDesiredVacationFragment"
+            app:destination="@id/editDesiredVacationFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <argument
+            android:name="DesiredVacationId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDesiredVacationFragment"
+        android:name="com.example.vacationsapp.presentation.desiredVacations.add.AddDesiredVacationFragment"
+        android:label="fragment_add_desired_vacation"
+        tools:layout="@layout/fragment_add_desired_vacation" />
+    <fragment
+        android:id="@+id/editDesiredVacationFragment"
+        android:name="com.example.vacationsapp.presentation.desiredVacations.edit.EditDesiredVacationFragment"
+        android:label="fragment_edit_desired_vacation"
+        tools:layout="@layout/fragment_edit_desired_vacation" >
+        <argument
+            android:name="DesiredVacationModel"
+            app:argType="com.example.vacationsapp.presentation.desiredVacations.DesiredVacationModel" />
+    </fragment>
+</navigation>

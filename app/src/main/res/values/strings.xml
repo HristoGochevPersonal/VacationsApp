@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">VacationsApp</string>
+    <string name="placeholder">Placeholder</string>
+    <string name="vacation_image">vacation image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_a_vacation">Choose a vacation</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="create_new_vacation">Create new vacation</string>
+    <string name="name">Name</string>
+    <string name="hotel_name">Hotel name</string>
+    <string name="location">Location</string>
+    <string name="cost">Cost</string>
+    <string name="description">Description</string>
+    <string name="image">Image</string>
+    <string name="image_picker">Image picker</string>
+    <string name="edit_button">Edit button</string>
+    <string name="delete_button">Delete button</string>
+    <string name="add_notification_for_area">Add notification for area</string>
+    <string name="go_back">Go back</string>
+    <string name="hotel_image">hotel_image</string>
+    <string name="location_image">location image</string>
+    <string name="cost_image">cost image</string>
+    <string name="description_image">description image</string>
+    <string name="add_a_vacation">add a vacation</string>
+    <string name="edit_vacation">Edit vacation</string>
+    <string name="save">Save</string>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    tools:context=".presentation.desiredVacations.add.AddDesiredVacationFragment">
+
+
+    <TextView
+        android:id="@+id/create_vacation_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/create_new_vacation"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/image_picker_holder"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="20dp"
+        android:nextFocusDown="@id/input_name">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/input_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:elevation="3dp"
+            android:src="@drawable/no_image" />
+
+        <ImageView
+            android:id="@+id/image_picker"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="end|bottom"
+            android:background="@drawable/circular"
+            android:contentDescription="@string/image_picker"
+            android:elevation="4dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_file_upload_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginVertical="12dp"
+        android:autofillHints="Enter name..."
+        android:background="@drawable/edittext_round"
+        android:elevation="3dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:nextFocusDown="@id/input_hotel_name"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@color/black" />
+
+
+    <EditText
+        android:id="@+id/input_hotel_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginVertical="12dp"
+        android:autofillHints="Enter name..."
+        android:background="@drawable/edittext_round"
+        android:elevation="3dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:hint="@string/hotel_name"
+        android:inputType="text"
+        android:nextFocusDown="@id/input_location"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@color/black" />
+
+
+    <EditText
+        android:id="@+id/input_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginVertical="12dp"
+        android:autofillHints="Enter name..."
+        android:background="@drawable/edittext_round"
+        android:elevation="3dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:hint="@string/location"
+        android:inputType="text"
+        android:nextFocusDown="@id/input_cost"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@color/black" />
+
+
+    <EditText
+        android:id="@+id/input_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginVertical="12dp"
+        android:autofillHints="Enter name..."
+        android:background="@drawable/edittext_round"
+        android:elevation="3dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:hint="@string/cost"
+        android:inputType="number"
+        android:nextFocusDown="@id/input_description"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@color/black" />
+
+
+    <EditText
+        android:id="@+id/input_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginVertical="12dp"
+        android:autofillHints="Enter name..."
+        android:background="@drawable/edittext_round"
+        android:elevation="3dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:hint="@string/description"
+        android:inputType="text"
+        android:nextFocusDown="@id/create_button"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="12dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textCursorDrawable="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="3dp"
+        android:layout_marginTop="30dp"
+        android:elevation="20dp">
+
+        <Button
+            android:id="@+id/cancel_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_button_rounded"
+            android:elevation="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/red" />
+
+        <Button
+            android:id="@+id/create_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/create_button_rounded"
+            android:elevation="20dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/create"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/purple" />
+    </LinearLayout>
+
+
+</LinearLayout>

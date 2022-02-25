@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/drawable-v24/cancel_button_rounded.xml" value="0.167" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/drawable-v24/create_button_rounded.xml" value="0.167" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/drawable-v24/ic_baseline_add_24.xml" value="0.25" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/drawable/circular.xml" value="0.167" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/drawable/edittext_round.xml" value="0.219" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.219" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/drawable/ic_baseline_edit_24_black.xml" value="0.219" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/drawable/ic_baseline_notification_add_24.xml" value="0.1" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/drawable/rounded_corner.xml" value="0.25" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/font/open_sans_bold.xml" value="0.31145833333333334" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/font/open_sans_semibold.xml" value="0.31145833333333334" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/layout/desired_vacation_preview.xml" value="0.11740890688259109" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/layout/fragment_add_desired_vacation.xml" value="0.13592919895107308" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/layout/fragment_desired_vacation_details_.xml" value="0.25" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/layout/fragment_desired_vacations.xml" value="0.11693548387096774" />
+        <entry key="..\:/Users/scott/AndroidStudioProjects/VacationsApp/app/src/main/res/layout/fragment_edit_desired_vacation.xml" value="0.21238937336105165" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
